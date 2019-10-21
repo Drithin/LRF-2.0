@@ -1,0 +1,128 @@
+/*=========================================*/
+/* COLORS USED
+Button Hover/Border: #27ae60,
+Header Nav Hover, Active; #1efa59,
+Color Tint on Hero Image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5))
+
+
+*/
+/*=========================================*/
+
+
+/*=========================================*/
+/* BASIC SETUP*/
+/*=========================================*/
+* {
+    margin: 0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    background-color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+}
+
+/*=========================================*/
+/* REUSABLE COMPONENTS*/
+/*=========================================*/
+
+.row{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+h1{
+    color: #fff;
+    font-size: 125%;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;  
+}
+
+.btn{
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid white;
+    border-radius: 200px;
+    transition: background-color 0.5s;
+}
+
+.btn:hover{
+    background-color: #27ae60;
+    color: #fff;
+    border-color: #27ae60;
+}
+
+/*=========================================*/
+/* HEADER */
+/*=========================================*/
+header{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('/resources/css/img/hero-1.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+.hero-content{
+    position: absolute;
+    max-width: 1140px;
+    top: 31%;
+    left: 50%;    
+}
+
+.logo{
+    height: 8%;
+    width: 8%;
+    float: left;
+   margin-left: 10px
+}
+
+.logo-text{
+    position: absolute;
+    top:50px;
+    left: 320px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 75%;
+}
+
+
+
+.main-nav{
+    float: right;
+    list-style: none;
+    margin-top: 45px;
+}
+
+.main-nav li{
+    display: inline-block;
+    margin-left : 15px;
+    
+}
+
+.main-nav li a{
+    color: #fff; 
+    font-size: 90%;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 75%;
+    margin-left: 10px;  
+}
+
+.main-nav li a:hover, .main-nav li a:active{
+    border-bottom: 1px solid #1efa59;
+   
+}
+
+
+
+
