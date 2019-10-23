@@ -93,13 +93,48 @@ header{
     text-decoration: none;
     color: #fff;
     font-size: 75%;
+    margin-left: 10px;
+}
+
+/*=========================================*/
+/* ABOUT US */
+/*=========================================*/
+.about-us-header{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('/resources/css/img/hero-1.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 25vh;
+}
+
+.about-us-hero-content h1{
+    text-align: center;
+}
+
+.about-us-content{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    text-align: justify;
+    line-height: 150%;
+    word-spacing: 1px;
 }
 
 
-/*=========================================*/
-/* FOOTER  */
-/*=========================================*/
 
+.obj-steps div{
+    color: #fff;
+    border: 1px solid #27ae60;
+    background-color: #27ae60;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 50%;
+    padding: 5px;
+    float: left;
+    font-size: 120%;
+}
 /*=========================================*/
 /* MAIN NAV  */
 /*=========================================*/
@@ -129,6 +164,21 @@ header{
    
 }
 
+/*=========================================*/
+/* FOOTER NAV  */
+/*=========================================*/
+
+footer{
+    background-color: #333;
+    color: #fff;
+    font-size: 15px;
+}
+
+
+footer a{
+    text-decoration: none;
+    color: #fff;
+}
 
 
 
@@ -162,7 +212,7 @@ col p{
     padding-right: 20px;
 }
 
-ion-icon{
+.section-features ion-icon{
     position: absolute;
     top:113%;
     font-size: 150%;
