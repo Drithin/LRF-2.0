@@ -106,7 +106,8 @@ header{
 .logo-text{
     position: absolute;
     top:50px;
-    left: 320px;
+    left: 275px;
+    letter-spacing: 1px;
     text-decoration: none;
     color: #fff;
     font-size: 75%;
