@@ -590,6 +590,12 @@ col p{
     height: 45px;
     border-bottom: 1px solid #5e5e5e;
 }
+
+
+.text-center{
+    text-align: center;
+    margin-top: 40px;
+}
 .filter-button
 {
     font-size: 18px;
