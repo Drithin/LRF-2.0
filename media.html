@@ -8,6 +8,15 @@
     <link rel="stylesheet" href="vendors/css/normalize.css">
     <link rel="stylesheet" href="vendors/css/grid.css">
     <link rel="stylesheet" href="resources/css/style.css">
+    <link rel="stylesheet" href="resources/css/queries.css">
+
+    <link rel="stylesheet" href="vendors/css/glightbox.css">
+   
+
+
+
+   
+
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
   
@@ -59,166 +68,164 @@
         
       <div class="row">
           
-          <div id="myBtnContainer" class="text-center">
-            
-            <button class="btn filter-button active" onclick="filterSelection('news')">News</button>
-            <button class="btn filter-button" onclick="filterSelection('gallery')">Gallery</button>
-            <button class="btn filter-button" onclick="filterSelection('videos')">Videos</button>
+          <div class="text-center">
+            <button class="btn filter-button active" id="all" onclick="call(this.id)">All</button>
+            <button  class="btn filter-button" id="news" onclick="call(this.id)">News</button>
+            <button  class="btn filter-button" id="gallery" onclick="call(this.id)" >Gallery</button>
+            <button  class="btn filter-button" id="videos" onclick="call(this.id)" >Videos</button>
           </div>
-        
+
+         
       </div>
 
-    <div class="column news">
+   
       <div class="row">
         <div class="col span-1-of-4 news">
+            <a href="resources/img/LRF_press_001.jpg"
+            class="glightbox gallery_product filter news">
             <img src="resources/img/LRF_press_001.jpg">
+            </a>
         </div>
         <div class="col span-1-of-4 news">
+            <a href="resources/img/LRF_press_002.jpg"
+            class="glightbox gallery_product filter news">
             <img src="resources/img/LRF_press_002.jpg">
+            </a>
         </div>
         <div class="col span-1-of-4 news">
+            <a href="resources/img/LRF_press_003.jpg"
+            class="glightbox gallery_product filter news">
             <img src="resources/img/LRF_press_003.jpg">
+            </a>
         </div>
         <div class="col span-1-of-4 news">
-            <img src="resources/img/LRF_press_005.jpg">
+            <a href="resources/img/LRF_press_005.jpg"
+          class="glightbox gallery_product filter news">
+          <img src="resources/img/LRF_press_005.jpg">
+          </a>
         </div>
       </div>
+
       <div class="row">
         <div class="col span-1-of-4 news">
+            <a href="resources/img/LRF_press_006.jpg"
+            class="glightbox gallery_product filter news">
             <img src="resources/img/LRF_press_006.jpg">
+            </a>
         </div>
         <div class="col span-1-of-4 news">
-            <img src="resources/img/LRF_press_007.jpg">
+            <a href="resources/img/LRF_press_007.jpg"
+          class="glightbox gallery_product filter news">
+          <img src="resources/img/LRF_press_007.jpg">
+          </a>
         </div>
         <div class="col span-1-of-4 news">
-            <img src="resources/img/LRF_press_008.jpg">
+            <a href="resources/img/LRF_press_008.jpg"
+          class="glightbox gallery_product filter news">
+          <img src="resources/img/LRF_press_008.jpg">
+          </a>
         </div>
         <div class="col span-1-of-4 news">
+            <a href="resources/img/LRF_press_009.jpg"
+            class="glightbox gallery_product filter news">
             <img src="resources/img/LRF_press_009.jpg">
+            </a>
         </div>
       </div>
-    </div>
+    
 
-    <div class="column gallery">
+   
         <div class="row">
             <div class="col span-1-of-4 gallery">
+                <a href="resources/img/LRF-Gallery-1.jpg"
+                class="glightbox gallery_product filter gallery">
                 <img src="resources/img/LRF-Gallery-1.jpg">
+                </a>
             </div>
             <div class="col span-1-of-4 gallery">
+                <a href="resources/img/LRF-Gallery-2.jpg"
+                class="glightbox gallery_product filter gallery">
                 <img src="resources/img/LRF-Gallery-2.jpg">
+                </a>
             </div>
             <div class="col span-1-of-4 gallery">
+                <a href="resources/img/LRF-Gallery-3.jpg"
+                class="glightbox gallery_product filter gallery">
                 <img src="resources/img/LRF-Gallery-3.jpg">
+                </a>
             </div>
             <div class="col span-1-of-4 gallery">
+                <a href="resources/img/LRF-Gallery-4.jpg"
+                class="glightbox gallery_product filter gallery">
                 <img src="resources/img/LRF-Gallery-4.jpg">
+                </a>
             </div>
     
           </div>
     
           <div class="row">
             <div class="col span-1-of-4 gallery">
+                <a href="resources/img/LRF-Gallery-5.jpg"
+                class="glightbox gallery_product filter gallery">
                 <img src="resources/img/LRF-Gallery-5.jpg">
+                </a>
             </div>
             <div class="col span-1-of-4 gallery">
+                <a href="resources/img/LRF-Gallery-6.jpg"
+                class="glightbox gallery_product filter gallery">
                 <img src="resources/img/LRF-Gallery-6.jpg">
+                </a>
             </div>
             <div class="col span-1-of-4 gallery">
+                <a href="resources/img/LRF-Gallery-8.jpg"
+                class="glightbox gallery_product filter gallery">
                 <img src="resources/img/LRF-Gallery-8.jpg">
+                </a>
             </div>
             <div class="col span-1-of-4 gallery">
+                <a href="resources/img/LRF-Gallery-9.jpg"
+                class="glightbox gallery_product filter gallery">
                 <img src="resources/img/LRF-Gallery-9.jpg">
+                </a>
             </div>
           </div>
-    </div>
+   
 
-
-
-    <div class="column videos">
         <div class="row">
             <div class="col span-1-of-4 videos">
-                <a>
+                <a href="https://www.youtube.com/embed/oMR5ADyss2s"
+                class="glightbox gallery_product filter videos">
                 <iframe  class="boxImg" src="https://www.youtube.com/embed/oMR5ADyss2s" frameborder="0" allowfullscreen></iframe>
               </a>
             </div>
             <div class="col span-1-of-4 videos">
-                <a>
+                <a href=https://www.youtube.com/embed/az4peOzLDzE 
+                class="glightbox gallery_product filter videos"></a>
                 <iframe  class="boxImg" src="https://www.youtube.com/embed/az4peOzLDzE" frameborder="0" allowfullscreen></iframe>
               </a>
             </div>
             <div class="col span-1-of-4 videos">
-                <a>
+                <a href="https://www.youtube.com/embed/VYfz8svl1p"
+                class="glightbox gallery_product filter videos">
                 <iframe  class="boxImg" src="https://www.youtube.com/embed/VYfz8svl1pU" frameborder="0" allowfullscreen></iframe>
               </a>
       
             </div>
             <div class="col span-1-of-4 videos">
-                <a>
+                <a href="https://www.youtube.com/embed/nqaAUjh5Bfs"
+                class="glightbox gallery_product filter videos">
                 <iframe  class="boxImg" src="https://www.youtube.com/embed/nqaAUjh5Bfs" frameborder="0" allowfullscreen></iframe>
               </a>
             </div>
           </div>
-    </div>
-      
 
-      
+          <script src="resources/js/jquery-2.1.1.js"></script>
 
-       
-        
-        <script>
-            filterSelection("news")
+          <script src="resources/js/glightbox.min.js"></script>
+          <script src="resources/js/index.js"></script>
 
-            function filterSelection(c) {
-              var x, i;
-              x = document.getElementsByClassName("col");
-             
-              for (i = 0; i < x.length; i++) {
-
-                w3RemoveClass(x[i], "show");
-
-                if (x[i].className.indexOf(c) > -1)
-                w3AddClass(x[i], "show");
-              }
-            }
-            
-            function w3AddClass(element, name) {
-              var i, arr1, arr2;
-              arr1 = element.className.split(" ");
-              arr2 = name.split(" ");
-              for (i = 0; i < arr2.length; i++) {
-                if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
-              }
-            }
-            
-            function w3RemoveClass(element, name) {
-              var i, arr1, arr2;
-              arr1 = element.className.split(" ");
-              arr2 = name.split(" ");
-              for (i = 0; i < arr2.length; i++) {
-                while (arr1.indexOf(arr2[i]) > -1) {
-                  arr1.splice(arr1.indexOf(arr2[i]), 1);     
-                }
-              }
-              element.className = arr1.join(" ");
-            }
-            
-            
-            // Add active class to the current button (highlight it)
-            var btnContainer = document.getElementById("myBtnContainer");
-            var btns = btnContainer.getElementsByClassName("btn");
-            for (var i = 0; i < btns.length; i++) {
-              btns[i].addEventListener("click", function(){
-                var current = document.getElementsByClassName("active");
-                current[0].className = current[0].className.replace(" active", "");
-                this.className += " active";
-              });
-            }
-            </script>
-     
-
-        <!-- JS  -->
-     <!-- <script src="js/glightbox.min.js"></script>
-     <script src="js/index.js"></script> -->
+          
+         
     </body>
 
     </html>

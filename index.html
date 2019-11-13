@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="vendors/css/normalize.css">
     <link rel="stylesheet" href="vendors/css/grid.css">
     <link rel="stylesheet" href="resources/css/style.css">
+    <link rel="stylesheet" href="resources/css/queries.css">
 
     <!-- <link rel="stylesheet" href="resources/css/reset.css">                 -->
 	<link rel="stylesheet" href="resources/css/testimonials-style.css">   
@@ -28,7 +29,7 @@
             <img src="/resources/img/logo.png" alt="LRF-Logo" class="logo"><a href="/index.html" class="logo-text">LATHA RAJA FOUNDATION</a>
 
             
-            <ul class="main-nav">
+            <ul class="main-nav js--main-nav">
                 
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
@@ -47,12 +48,14 @@
                 <li><a href="contact.html">Contact</a></li>
                 
             </ul>
+
+            <a class="mobile-nav-icon js--nav-icon"><ion-icon name="menu"></ion-icon></a>
         </div>
 
         <div class="hero-content">
 
             <h1>The Bliss of Goodwill <br>transcends the potential of Humankind</h1>
-            <a href="#" class="btn hero-cta">Know More</a>
+            <a href="about.html" class="btn hero-cta">Know More</a>
 
         </div>
 
@@ -78,20 +81,20 @@
                 <ion-icon name="trophy" class="trophy"></ion-icon>
                 <h3>Awards</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit nostrum commodi debitis cumque amet rerum a autem nihil accusamus? Ut.</p>
-                <a href="#" class="btn activities-cta">Learn More</a>
+                <a href="awards.html" class="btn activities-cta">Learn More</a>
 
             </div>
             <div class="col span-1-of-4">
                 <ion-icon name="school"></ion-icon>
-                <h3>Scholarships</h3>
+                <h3>Financial Aid</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit nostrum commodi debitis cumque amet rerum a autem nihil accusamus? Ut.</p>
-                <a href="#" class="btn activities-cta">Learn More</a>
+                <a href="fin-aid.html" class="btn activities-cta">Learn More</a>
             </div>
             <div class="col span-1-of-4">
                 <ion-icon name="book"></ion-icon>
                 <h3>Publishing</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit nostrum commodi debitis cumque amet rerum a autem nihil accusamus? Ut.</p>
-                <a href="#" class="btn activities-cta">Learn More</a>
+                <a href="publishing.html" class="btn activities-cta">Learn More</a>
             </div>
             <div class="col span-1-of-4">
                 <ion-icon name="mail"></ion-icon>
@@ -126,7 +129,7 @@
                               support to enrich Indian literature, safeguard and promote Indian culture and heritage, provide financial 
                               support to the downtrodden and underdeveloped citizens etc.
                     </p>
-                    <a href="#" class="btn index-about-cta">Read More</a>
+                    <a href="about.html" class="btn index-about-cta">Read More</a>
                 </div>
             </div>
     </section>
@@ -390,12 +393,12 @@
 
         <footer>
             <div class="row">
-                <div class="col span-1-of-2">
-                        <p>&copy; Copyright 2019, All Rights Reserved</p>
+                <div class="col span-1-of-2 cr-info">
+                        <p class="align-left">&copy; Copyright 2019, All Rights Reserved</p>
 
                 </div>
-                <div class="col span-1-of-2">
-                        <p>Developed by <a href="https://www.vernaa.com">Vernaa</a></p>
+                <div class="col span-1-of-2 dev-info">
+                        <p class="align-right">Developed by <a href="https://www.vernaa.com">Vernaa</a></p>
                 </div>
             </div>
         </footer>
@@ -404,9 +407,21 @@
   
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
 
-    <script src="resources/js/jquery-2.1.1.js"></script>
+<script src="resources/js/jquery-2.1.1.js"></script>
 <script src="resources/js/masonry.pkgd.min.js"></script>
 <script src="resources/js/jquery.flexslider-min.js"></script>
 <script src="resources/js/main.js"></script> <!-- Resource jQuery -->
+
+<script>
+    $('.js--nav-icon').click(function(){
+        var nav = $('.js--main-nav');
+        var icon = $('.js--nav-icon')
+       
+       
+        nav.slideToggle(300);
+
+      
+    })
+</script>
 </body>
 </html>

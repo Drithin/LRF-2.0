@@ -18,12 +18,13 @@ Color Tint on Hero Image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5))
     box-sizing:border-box;
 }
 
-html{
+html,body{
     background-color: #fff;
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
     font-size: 20px;
     text-rendering: optimizeLegibility;
+    overflow-x: hidden;
 }
 
 /*=========================================*/
@@ -97,21 +98,31 @@ header{
 }
 
 .logo{
-    height: 8%;
+    height: 10%;
     width: 8%;
     float: left;
-   margin-left: 10px
+   margin-left: 10px;
+   position: absolute;
+   top: 3%;
 }
 
 .logo-text{
-    position: absolute;
-    top:50px;
-    left: 275px;
+    /* float: left;
+    left: 350px;
     letter-spacing: 1px;
     text-decoration: none;
     color: #fff;
     font-size: 75%;
-    margin-left: 20px;
+    margin-left: 40px;
+    position: absolute;
+    top:7%; */
+    float: left;
+   margin-left: 10px;
+   position: absolute;
+   top: 7%;
+   left: 18%;
+   font-size: 75%;
+   color: #fff;
 }
 
 /*=========================================*/
@@ -214,12 +225,13 @@ header{
 .main-nav{
     float: right;
     list-style: none;
-    margin-top: 45px;
+    margin-top: 55px;
+    margin-left: 20px;
 }
 
 .main-nav li{
     display: inline-block;
-    margin-left : 15px;
+    margin-left : 10px;
     
 }
 
@@ -229,7 +241,7 @@ header{
     text-transform: uppercase;
     text-decoration: none;
     font-size: 75%;
-    margin-left: 10px;  
+    margin-left: 7px;  
 }
 
 .main-nav li a:hover, .main-nav li a:active{
@@ -254,6 +266,22 @@ header{
   
   .dropdown:hover .dropdown-content {
     display: block;
+  }
+
+/*=========================================*/
+/* MOBILE NAV  */
+/*==========================================*/
+  .mobile-nav-icon{
+      float: right;
+      margin-top: 20px;
+      cursor: pointer;
+      display: none;
+     
+  }
+
+  .mobile-nav-icon ion-icon{
+      font-size: 40px;
+      color: #fff;
   }
 /*=========================================*/
 /* FOOTER NAV  */
@@ -361,8 +389,12 @@ col p{
     text-align: justify;
     font-size: 100%;
     font-weight: 300;
-    letter-spacing: 1px;  
+    letter-spacing: 1px; 
+    box-shadow: 1px 2px 4px rgba(255, 255, 255, .5);
+    padding: 10px; 
 }
+
+
 
 .index-about-cta{
     margin-top: 20px;
@@ -637,6 +669,10 @@ col p{
 
 .block{
     opacity: 0;
+}
+
+iframe .boxImg{
+    width: 100%;
 }
 
 @-webkit-keyframes fadeIn {
